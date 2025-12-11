@@ -1,15 +1,12 @@
 {
-	"name": "ds_adlsgen2",
+	"name": "ds_param",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adlsgen2_sink",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"ds_param_filename": {
-				"type": "string"
-			},
-			"ds_param_folder": {
+			"ds_folder": {
 				"type": "string"
 			}
 		},
@@ -18,12 +15,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().ds_param_filename",
-					"type": "Expression"
-				},
 				"folderPath": {
-					"value": "@dataset().ds_param_folder",
+					"value": "@dataset().ds_folder",
 					"type": "Expression"
 				},
 				"fileSystem": "source"
@@ -79,6 +72,5 @@
 				"type": "String"
 			}
 		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
