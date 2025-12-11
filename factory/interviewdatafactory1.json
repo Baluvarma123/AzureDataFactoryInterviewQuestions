@@ -1,0 +1,9 @@
+{
+	"name": "interviewdatafactory1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a8bd2fcd-a0d2-416d-87c1-446c3be4c6da",
+		"tenantId": "8f90a4ff-7d84-4e11-9f87-0dd691ada4ed"
+	}
+}
