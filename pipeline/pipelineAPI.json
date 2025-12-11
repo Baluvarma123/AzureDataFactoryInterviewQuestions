@@ -77,7 +77,8 @@
 										"ds_param_filename": {
 											"value": "@item().name",
 											"type": "Expression"
-										}
+										},
+										"ds_param_folder": "github"
 									}
 								}
 							]
